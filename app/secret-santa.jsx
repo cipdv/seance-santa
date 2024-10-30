@@ -150,7 +150,14 @@ export default function SecretSanta() {
             </button>
           </form>
         ) : (
-          <p style={spookyStyles.result}>{result}</p>
+          <div>
+            <p style={spookyStyles.result}>{result}</p>
+            <p className="mt-8">
+              Please purchase a spooky gift for no more than $5 . . . do not
+              tell anyone what the gift is and keep it hidden when you arrive .
+              . . stay tuned for more ominous instructions . . .{" "}
+            </p>
+          </div>
         )}
       </main>
       <footer style={spookyStyles.footer}>
