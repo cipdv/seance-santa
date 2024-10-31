@@ -9,7 +9,7 @@ const assignments = {
   Hue: "Boo-Boo (Bibi)",
   Cip: "Cryler (Tyler)",
   Bibi: "Ahhhhnita (Anita)",
-  Anita: "The Cipt Keeper (Cip)",
+  Anita: "The Quipt Keeper (Cip)",
 };
 
 const spookyStyles = {
