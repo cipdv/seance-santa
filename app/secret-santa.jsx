@@ -5,12 +5,12 @@ import React, { useState } from "react";
 const participants = ["Tyler", "Jason", "Hue", "Cip", "Bibi", "Anita"];
 
 const assignments = {
-  Tyler: "Hue",
-  Jason: "Cip",
-  Hue: "Bibi",
-  Cip: "Tyler",
-  Bibi: "Jason",
-  Anita: "Anita",
+  Tyler: "Gue (Hue)",
+  Jason: "The Cipt Keeper (Cip)",
+  Hue: "Boo-Boo (Bibi)",
+  Cip: "Cryler (Tyler)",
+  Bibi: "Mr. Vorhees (Jason)",
+  Anita: "Ahhhhnita (Anita)",
 };
 
 const spookyStyles = {
