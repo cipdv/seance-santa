@@ -96,9 +96,17 @@ export default function SecretSanta() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (participants.includes(userName)) {
-      const assignedPerson = assignments[userName];
-      setResult(`${userName}, your victim is... ${assignedPerson}!`);
+    const lowerCaseUserName = userName.toLowerCase();
+    const lowerCaseParticipants = participants.map((name) =>
+      name.toLowerCase()
+    );
+
+    if (lowerCaseParticipants.includes(lowerCaseUserName)) {
+      const originalName = participants.find(
+        (name) => name.toLowerCase() === lowerCaseUserName
+      );
+      const assignedPerson = assignments[originalName];
+      setResult(`${originalName}, your victim is... ${assignedPerson}!`);
     } else {
       setResult("Please enter a valid name from the list of participants.");
     }
